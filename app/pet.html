@@ -18,9 +18,11 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="bower_components/owlcarousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
         <!-- endbuild -->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <script language="JavaScript" type="text/javascript" src="vendor/ContentFlow/contentflow.js"></script>
+        <script type="text/javascript" src="/fancybox/jquery.fancybox.pack.js"></script>
 
     </head>
     <body>
@@ -55,79 +57,89 @@
         
         <div class="main-area">
             <div class="container">
-                <div class="row login-horizontal">
-                    <div class="col-md-12">
-                        <h3>Zaloguj się aby w pełni korzystać z funkcji społecznościowych</h3>
+                <div class="row main-sidebars">
+                    <div class="col-md-9">
+                        <div class="row login-horizontal">
+                            <div class="col-md-12">
+                                <h3>Zaloguj się aby w pełni korzystać z funkcji społecznościowych</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <form class="form-inline" role="form">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Adres email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Hasło</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
+                                  </div>
+                                </form>
+                            </div>
+                             <div class="col-md-3 col-md-push-1">
+                                <h4>Nie masz jeszcze konta?</h4>
+                                <h5><a href="#">Zarejestruj się</a> w mniej niż minutę</h5>
+                                <h5>Lub <a href="#"><img src="images/facebook_zaloguj.png"></a></h5>
+                             </div>
+                        </div>
+                        <div class="ContentFlow">
+                            <div class="loadIndicator"><div class="indicator"></div></div>
+                            <div class="flow">
+                                <img class="item" src="images/user_dog1.jpg" title="Tytul zdjecia"/>
+                                <img class="item" src="images/user_dog2.jpg" title="Opis zdjecia"/>
+                                <img class="item" src="images/user_dog3.jpg" title="Kolejne zdjecie"/>
+                                <img class="item" src="images/user_dog4.jpg" title="Zdjecie 4"/>
+                                <!-- <div><iframe width="560" height="315" src="//www.youtube.com/embed/ggsIU8rXubk" frameborder="0" allowfullscreen></iframe></div> -->
+                                <!-- Add as many items as you like. -->
+                            </div>
+                            <div class="globalCaption"></div>
+                            <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
+                        </div>
+                        <div class="col-md-3 pet-info">
+                            <h2>Burek</h2>
+                            <div class="ranking">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                                                <div class="vote">
+                                <a href="#"><i class="fa fa-thumbs-up"></i></a>
+                                <a href="#"><i class="fa fa-thumbs-down"></i></a>
+                            </div>
+                            <p>Kategoria: Pies</p>
+                            <p>Rasa: Labrador</p>
+                            <p>Miejscowość: Wrocław</p>
+                            <p>Właściciel: Jan Kowalski</p>
+                            <div class="social-media">
+                                <img src="images/google.png" />
+                                <img src="images/facebook.png" />
+                                <img src="images/twitter.png" />
+                            </div>
+                        </div>                
+                        <div class="description">
+                            <h3>Opis pupila</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam, repudiandae et eum deleniti veniam aperiam aliquid blanditiis assumenda molestias! Consectetur, laborum, vitae aperiam quaerat ea neque non voluptate aut.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, numquam sapiente repudiandae omnis vel facere nihil excepturi possimus ullam id laboriosam velit culpa reiciendis quidem explicabo! Amet, dolor inventore est!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam, repudiandae et eum deleniti veniam aperiam aliquid blanditiis assumenda molestias! Consectetur, laborum, vitae aperiam quaerat ea neque non voluptate aut.</p>
+                        </div>
+                            <div class="comments-container">
+                                <h3>Komentarze</h3>
+                                <p>Silnik komentarzy dodany będzie po integracji z wordpress</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-3 sidebar">
+                            <div class="sidebar-item">
+                                <h3>Artykuły</h3>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <form class="form-inline" role="form">
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Adres email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputPassword1">Hasło</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Hasło">
-                          </div>
-                        </form>
-                    </div>
-                     <div class="col-md-3 col-md-push-1">
-                        <h4>Nie masz jeszcze konta?</h4>
-                        <h5><a href="#">Zarejestruj się</a> w mniej niż minutę</h5>
-                        <h5>Lub <a href="#"><img src="images/facebook_zaloguj.png"></a></h5>
-                     </div>
-                </div>
-                <div class="ContentFlow">
-                    <div class="loadIndicator"><div class="indicator"></div></div>
-                    <div class="flow">
-                        <img class="item" src="images/user_dog1.jpg" title="Tytul zdjecia"/>
-                        <img class="item" src="images/user_dog2.jpg" title="Opis zdjecia"/>
-                        <img class="item" src="images/user_dog3.jpg" title="Kolejne zdjecie"/>
-                        <img class="item" src="images/user_dog4.jpg" title="Zdjecie 4"/>
-                        <!-- <div><iframe width="560" height="315" src="//www.youtube.com/embed/ggsIU8rXubk" frameborder="0" allowfullscreen></iframe></div> -->
-                        <!-- Add as many items as you like. -->
-                    </div>
-                    <div class="globalCaption"></div>
-                    <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
-                </div>
-                <div class="col-md-3 pet-info">
-                    <h2>Burek</h2>
-                    <div class="ranking">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                                        <div class="vote">
-                        <a href="#"><i class="fa fa-thumbs-up"></i></a>
-                        <a href="#"><i class="fa fa-thumbs-down"></i></a>
-                    </div>
-                    <p>Kategoria: Pies</p>
-                    <p>Rasa: Labrador</p>
-                    <p>Miejscowość: Wrocław</p>
-                    <p>Właściciel: Jan Kowalski</p>
-                    <div class="social-media">
-                        <img src="images/google.png" />
-                        <img src="images/facebook.png" />
-                        <img src="images/twitter.png" />
-                    </div>
-                </div>                
-                <div class="description">
-                    <h3>Opis pupila</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam, repudiandae et eum deleniti veniam aperiam aliquid blanditiis assumenda molestias! Consectetur, laborum, vitae aperiam quaerat ea neque non voluptate aut.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, numquam sapiente repudiandae omnis vel facere nihil excepturi possimus ullam id laboriosam velit culpa reiciendis quidem explicabo! Amet, dolor inventore est!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, incidunt, veritatis tenetur labore suscipit possimus molestiae tempore ratione deleniti qui dolore magni corrupti iste ex enim. Dolore, ad nihil pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quam, repudiandae et eum deleniti veniam aperiam aliquid blanditiis assumenda molestias! Consectetur, laborum, vitae aperiam quaerat ea neque non voluptate aut.</p>
-                </div>
-                    <div class="comments-container">
-                        <h3>Komentarze</h3>
-                        <p>Silnik komentarzy dodany będzie po integracji z wordpress</p>
-                    </div>
-                
-                <div class="footer">
-                    <p></br>Stopka</p>
-                </div>
+                        <div class="footer">
+                            <p></br>Stopka</p>
+                        </div>
                 </div>
             </div>
         </div>

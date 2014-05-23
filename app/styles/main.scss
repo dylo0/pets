@@ -99,9 +99,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
                         margin-top: 10px;
                         float: right;
                     }
-                    img {
+/*                    img {
                         width:100%;
-                    }
+                    }*/
 
                     h3 {
                         display: inline-block;
@@ -200,6 +200,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
             }   
         }   
 
+        .articles {
+            margin-bottom: 80px;
+        }
+
         .article {
             .article-image {
                 margin-left: -70px;
@@ -212,7 +216,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
             background: #333;
             position: absolute;
             top: 0px;
-            bottom: -80px;
+            bottom: 0px;
             right: 0;
         }
 
@@ -223,7 +227,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
         .newsletter {
             padding-top: 10px;
             background: #6FBA30;
-            margin-top: 80px;
             margin-left: -15px;
             margin-right: -15px;
             .newsletter-header {
