@@ -9,4 +9,6 @@ $(document).ready(function() {
     $('.flip-container').click(function () {
         $(this).toggleClass('flip');
     });
+
+    var myNewFlow = new ContentFlow('coverFlow', { scaleFactor: 2.0 } ) ;
 });

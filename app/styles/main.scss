@@ -198,10 +198,25 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
                     }
                 }
             }   
-        }   
+        } 
+
+        .article-full {
+            .article-image {
+                width: 280px;
+                margin-left: 0px;
+            }
+
+            .social-media {
+                margin-left: 20px;
+            }
+        }
 
         .articles {
             margin-bottom: 80px;
+        }
+
+        .board {
+            height: 1000px;
         }
 
         .article {
@@ -209,6 +224,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
                 margin-left: -70px;
                 margin-top: 10px;
                 width: 200px;
+            }
+            .social-media {
+                margin-top: 10px;
+                margin-left: -60px;
             }
         }
 
@@ -218,6 +237,18 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
             top: 0px;
             bottom: 0px;
             right: 0;
+            color: #ccc;
+            a {
+                color: #eee;
+            }
+
+            .sidebar-item {
+                margin-top: 30px;
+                 input, textarea {
+                    width: 100%;
+                    color: #333;
+                }
+            }
         }
 
         .main-sidebars {
@@ -242,6 +273,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
             color: #ddd;
             margin-left: -15px;
             margin-right: -15px;
+        }
+
+        .offset-20 {
+            margin-top: 20px;
         }
     }
 }
